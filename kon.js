@@ -294,6 +294,18 @@ console.log(person2);
 
 sayHello();
 
+let x = 5; //Global Variables -Accessed in all Functions
+
+function sayX(){
+  console.log(x);
+  //console.log(x + num);
+}
+function addX(){ //Local Variables -Accessed within a function
+  console.log(X + num);
+}
+sayX();
+addX(5);
+
 function add(num1,num2){
   let sum = num1+num2;
   console.log(sum);
@@ -359,3 +371,4 @@ function printnames(names){
 
 printnames(n1);
 printnames(n);
+
