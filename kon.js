@@ -294,18 +294,6 @@ console.log(person2);
 
 sayHello();
 
-let x = 5; //Global Variables -Accessed in all Functions
-
-function sayX(){
-  console.log(x);
-  //console.log(x + num);
-}
-function addX(){ //Local Variables -Accessed within a function
-  console.log(X + num);
-}
-sayX();
-addX(5);
-
 function add(num1,num2){
   let sum = num1+num2;
   console.log(sum);
@@ -329,12 +317,40 @@ multiply(5,2);
 divide(5,2); */
 
 
-
+/* 
 function sayHello(){
   console.log("Hello");
 }
 
 sayHello();
+
+let x = 5; //Global Variables -Accessed in all Functions
+
+function sayX(){
+  console.log(x);
+  //console.log(x + num);
+}
+function addX(){ //Local Variables -Accessed within a function
+  console.log(X + num);
+}
+sayX();
+addX(5);
+
+function greetUser(name){
+  document.writeln(`Hello ${name}.`);
+}
+ */
+/* let userName = prompt("Enter your name: ");
+greetUser(userName); */
+
+function addNumber(num1,num2){
+  let sum = paresInt(num1)+parseInt(num2);
+  document.writeln(`The sum is ${sum}`);
+}
+
+let num1 = prompt("1st number: ");
+let num2 = prompt("2nd number: ");
+addNumber(num1,num2);
 
 function add(num1,num2){
   return num1+num2;
@@ -371,4 +387,6 @@ function printnames(names){
 
 printnames(n1);
 printnames(n);
+    
+
 
